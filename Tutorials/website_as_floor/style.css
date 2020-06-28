@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    color: #F2F2F2;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap; /* this property is the key */
+}
+
+section {
+    display: inline-block;
+}
+
+.first {
+    background: tomato;
+    width:100vw;
+    height:100vh;
+}
+
+.second {
+    background: blue;
+    width:100vw;
+    height:100vh;
+}
+
+.third {
+    background: orange;
+    width:100vw;
+    height:100vh;
+}
+
+.fourth {
+    background: lemonchiffon;
+    width:100vw;
+    height:100vh;
+}

@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    color: #F2F2F2;
+    height: 100%;
+}
+
+.first {
+    background: green;
+    height: 100vh;
+}
+
+.second {
+    background: pink;
+    height: 100vh;
+}
+
+.third {
+    background: lemonchiffon;
+    height: 100vh;
+}
+
+.fourth {
+    background: tomato;
+    height: 100vh;
+}
