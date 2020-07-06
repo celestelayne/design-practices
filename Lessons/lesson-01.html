@@ -13,11 +13,11 @@
             <figure>
                 <label for="mn-blue-links" class="margin-toggle">⊕</label>
                 <input type="checkbox" id="mn-blue-links" class="margin-toggle">
-                <span class="marginnote"><em>Silencio (1953)</em> by Eugen Gomringer</span>  
+                <span class="marginnote"><em>Silencio (1953)</em> by Eugen Gomringer<br>is comprised of five lines in each of which the printed word 'silencio' is repeated three times; but in the third line the second position is left blank, and through the interplay of word meaning and structure this white space becomes semanticized and turns into an iconic representation of silence.</span>  
                 <img src="https://cdn-images-1.medium.com/max/2560/1*c5mv__QPrcnNI2NffXpO_A.jpeg" alt="">
             </figure>
-
-  
+            <p class="sans">Concrete Poetry is a literary movement where words, letters, typefaces and other content are used as a visual compositional tool. It can be thought of as a type of Visual Poetry. However, in Concrete Poetry, the typographical effect plays a central role in conveying design and meaning. Concrete poets experimented boldly with language, incorporating visual, verbal, kinetic, and even sonic elements.</p>
+            <p class="sans">HTML is a markup language typically used to structure content on a web page with tags that convey to the browser the type of content and how it should be presented. In this lesson, we are going to use HTML in a visual manner that takes into consideration graphic space, design and meaning.</p> 
         </section>
         <section>
             <h2 id="html-basics">HTML Basics</h2>
@@ -37,6 +37,9 @@
         <section>
             <h2 id="structural-markup">Structural Markup</h2>
             <p>The fundamental building block of HTML is the element. Elements consist of an opening tag, closing tag and content (text, image, video) sandwiched in between. The content is what the user sees on the webpage. The tags tell the browser the type of content and how to present it.</p>
+            <figure>
+                <img src="https://cdn-images-1.medium.com/max/2028/0*H2df67pMMWaonRDp" alt="">
+            </figure>
             <ul>
                 <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements">Headings</a></li>
                 <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p">Paragraphs</a></li>
@@ -56,13 +59,20 @@
                 </span>            
             </p>
 
-            <p>Choose an existing poem and digitize an interactive version for the web. Ubuweb, Open Library, and Monoskop are good sources. The poem should be able to fit on approximately one printed page. Let’s focus on breaking up the text in various ways, as much as you can with these limited HTML elements. Take white space into consideration and delineate a clear hierarchy of information on the page.</p>
+            <p>Choose an existing poem and digitize an interactive version for the web. <a href="http://www.ubu.com/">Ubuweb</a>, <a href="https://openlibrary.org/">Open Library</a>, and <a href="http://monoskop.org/Monoskop">Monoskop</a> are good sources. The poem should be able to fit on approximately one printed page. Let’s focus on breaking up the text in various ways, as much as you can with these limited HTML elements. Take white space into consideration and delineate a clear hierarchy of information on the page.</p>
             <p>For this exercise:
                 <ul>
                     <li>Only use HTML</li>
-                    <li>In addition to the required boilerplate HTML, use only the following elements:</li>
+                    <li>In addition to the required boilerplate HTML, use only the following elements: <code>
+                        &lt;p&gt;,
+                        &lt;li&gt;,
+                        &lt;h1&gt; to &lt;h6&gt;, and
+                        &lt;br&gt;
+                    </code>
+                    </li>
                 </ul>
             </p>
+            <p>How does the poem usually look? What happens if you present it more spaced out? More condensed? In a specific shape or form? What happens to the poem when you have to scroll to read it all?</p>
             <p>Starter code for this tutorial can be found in <a href="https://github.com/celestelayne/design-practices/tree/master/Tutorials/tutorial-01">this Github repository</a>.</p>
 
             <h3 id="tutorial--examples">Examples</h3>
@@ -90,8 +100,12 @@
         </section>
         <section>
             <h2 id="semantic-markup">Semantic Markup</h2>
-            <p>Semantic elements tell browsers something about the contents of the element. They designed to communicate the meaning of the content to the browser, developer, reader, and any other technologies interpreting the document (e.g. voice assistants, search engine web crawler, browser translation tools, or assistive technologies such as screen readers).</p>
-            <p>There are approximately 100 semantic elements available. There are approximately 100 semantic elements available. The following is a list of commonly used ones:
+
+            <p>Semantic elements tell browsers something about the contents of the element. They are designed to communicate the meaning of the content to the browser, developer, reader, and any other technologies interpreting the document (e.g. voice assistants, search engine web crawler, browser translation tools, or assistive technologies such as screen readers).</p>
+            <figure>
+                <img src="https://cdn-images-1.medium.com/max/2048/1*QV7vsLgKorrho_NVbdYMKw.jpeg" alt="">
+            </figure>
+            <p>There are approximately 100 semantic elements available. The following is a list of commonly used ones:
                 <ul>
                     <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article">Article</a></li>
                     <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside">Aside</a></li>
@@ -118,12 +132,6 @@
             
             <p>Starter code for this tutorial can be found in <a href="https://github.com/celestelayne/design-practices/tree/master/Tutorials/tutorial-02">this Github repository</a>.</p>
 
-            <h3 id="tutorial--examples">Examples</h3>
-            <p>
-                <ul>
-                    <li>John J Sharkey’s <em>Schoenberg</em>, 1963</li>
-                </ul>
-            </p>
             <h3 id="tutorial--solution">Solution</h3>
             <figure class="iframe-wrapper">
                 <iframe width="100%" height="250" frameborder="0" src="https://codepen.io/celestelayne/embed/oNjOpaP" frameborder="0" allowfullscreen>
@@ -131,11 +139,101 @@
               </figure>
         </section>
         <section>
+            <h2>Page Structure</h2>
+            <h3 id="page-structure--nesting">Nesting</h3>
+            <p>
+                Think of HTML tags as boxes that hold your content. That content can be text, images, or video. Sometimes, you need to place boxes inside of other boxes. Those "inner" boxes are nested inside of others. A perfect example of this is the bulleted list. The list items are nested inside of the unordered list tag. 
+            </p>
+            <p><a href="https://www.lifewire.com/nesting-html-tags-3466475">Nesting HTML Tags: How to Nest HTML Tags Correctly</a>, by Jennifer Kyrnin. Updated June 26, 2019</p>
+
+            <h3 id="page-structure--relationships">Relationships</h3>
+            <p>We often use the same terms that we would use to describe the relationship between family members, to describe the relationship between HTML elements. Each element is related to another element in a <em>parent-child-sibling</em> relationship.</p>
+            <figure>
+                <img src="https://cdn-images-1.medium.com/max/3200/0*B0w-9XrpptL49xHK" alt="">
+            </figure>
+            <p>An element that is directly above another element in the hierarchy is called the <em>parent</em> of the element below it. The element below the parent is called the <em>child</em>. When two elements are equal in the hierarchy, they are known as <em>siblings</em>.</p>
+
+            <h3 id="page-structure--basic-requirements">Basic Requirements of a Web Page</h3>
+            <figure>
+                <img src="https://cdn-images-1.medium.com/max/3168/1*bB2P5gJMaZtA95Zq4oHcGQ.png" alt="">
+            </figure>
+            <p>HTML defines the structure and content of information on the page. All HTML pages have the same basic structure:
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/HTML_element#Document_structure_elements">Document Structure Elements</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/HTML_element#Document_head_elements">Document Head Elements</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/HTML_element#Document_body_elements">Document Body Elements</a></li>
+                </ul>
+            </p>
+
+        </section>
+
+        <section>
+            <h2>Block vs Inline Elements</h2>
+            <p>Historically, elements could be classified as either: block-level elements or inline elements. Block-level elements have built-in line breaks, causing them to automatically stack vertically, while inline elements wrap within their containing elements.</p>
+
+            <p>By default, each element (or “box”) in HTML is either an inline or block element.
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements">Inline elements</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements">Block level elements</a></li>
+                </ul>
+            </p>
+        </section>
+        <section>
+            <h2>Document Object Model (DOM) Tree</h2>
+            <p>In the DOM Tree, the opening and closing <code>&lt;html&gt;&lt;/html&gt;</code> elements form the foundation upon which the rest of the document is built.</p>
+            <figure>
+                <img src="https://cdn-images-1.medium.com/max/3328/1*Tq2KhpH3RUtDs-V23J1KRA.png" alt="">
+            </figure>
+            <ul>
+                <li><a href="https://www.w3.org/TR/DOM-Level-2-Core/introduction.html">What is the Document Object Model</a>, The World Wide Web Consortium (W3C)</li>
+                <li><a href="https://www.taniarascia.com/understanding-the-dom-tree-and-nodes/">Understanding the DOM Tree and Nodes</a>, Tania Rascia, November 7th, 2017
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Indentation</h2>
+            <p>While indentation has no bearing on how the page is rendered in the browser, it is especially important for readability of your code. Indented code is easier to read, easier to understand, easier to modify, and easier to maintain (e.g. if you forget to include a closing tag). Common practice is to indent one tab space for any tags that are nested inside other tags.</p>
+            <figure>
+                <img src="https://cdn-images-1.medium.com/max/3168/1*y9o-AISq_e361vQ5yhiHtA.png" alt="">
+            </figure>
+            <p>Whatever format you decide to use, just be consistent.</p>
+        </section>
+
+        <section>
+            <h2>Attributes</h2>
+            <p>All HTML elements are able to support attributes. Attributes vary depending on their use, but always live within the opening tag of an HTML element. For example:</p>
+            <figure>
+                <img src="/assets/carbon-09.png" alt="">
+            </figure>
+            <p>Here, <code>href</code> is the attribute and will always follow the attribute-name="value" convention.</p>
+            <p>Below is a list of extremely helpful attributes that allow you to add custom meta-information to your HTML elements. They become immensely helpful when targeting these elements with CSS and/or JavaScript .</p>
+            <p>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes">HTML attribute reference</a>, MDN Documentation</li>
+                    <li><a href="https://en.wikipedia.org/wiki/HTML_attribute">HTML Attribute</a>, Wikipedia</li>
+                </ul>
+            </p>
+        </section>
+        <section>
+            <h2>Forms</h2>
+            <p>The search box that sits in the middle of Google’s homepage is a simple form — specifically, an input field.</p>
+            <figure>
+                <img src="https://cdn-images-1.medium.com/max/2872/1*xJyrhWVxUyFMCUV9hU8nhg.png" alt="">
+            </figure>
+            <p>Forms are an important way to gather information from visitors of your site.
+                <ul>
+                    <li>Forms, MDN Documentation</li>
+                    <li>Basic Native Form Controls, MDN Documentation</li>
+                </ul>
+            </p>
+        </section>
+        <section>
             <h2>Exercise 1</h2>
             <h3 id="exercise--instructions">Instructions</h3>
-            <p>Make three more variations of your poem, so now you have a total of five visual poems. Each variation will be a separate web page. For these variations, focus on changing the poems form through shifts in spacing, scale, hierarchy and typography. The poem’s original content must remain intact.</p>
-            <p>
-                Keep in mind the inherent behavior of block level vs inline HTML elements. This assignment borrows heavily from <a href="http://laurelschwulst.com/">Laurel Schwulst</a>’s exercise <a href="http://veryinteractive.net/projects/variations">25 Variations</a>. 
+            <p>Make three more variations of your poem, so now you have a total of five visual poems. Each variation will be a separate web page using HTML for both semantic and visual expression. For these variations, focus on changing the poems form through shifts in spacing, scale, hierarchy and typography. The creation of multiple variations means that no one representation of the poem is important than any of the others. This should allow you ample room for visual experimentation.</p>
+
+            <p>Starter code for this tutorial can be found in <a href="https://github.com/celestelayne/design-practices/tree/master/Exercises/exercise-01">this Github repository</a>.</p>
+            <p>This assignment borrows heavily from <a href="http://laurelschwulst.com/">Laurel Schwulst</a>’s exercise <a href="http://veryinteractive.net/projects/variations">25 Variations</a>. 
             </p>
         </section>
     </article>

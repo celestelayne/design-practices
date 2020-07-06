@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patterns of the Bauhaus: CSS Basics</title>
+    <link rel="stylesheet" href="../tufte.css"/>
+</head>
+<body>
+    <article>
+        <h1 id="tufte-css">Patterns of the Bauhaus: CSS Basics</h1>
+        <section>
+            <figure>
+                <label for="mn-blue-links" class="margin-toggle">⊕</label>
+                <input type="checkbox" id="mn-blue-links" class="margin-toggle">
+                <span class="marginnote">László Moholy-Nagy: <em>A 19</em>, 1927</span> 
+                <img src="https://cdn-images-1.medium.com/max/2000/1*g4L2Rc7vIoj7USTmeY-hrQ.jpeg" alt="">
+            </figure>
+            <p class="sans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur magnam incidunt reprehenderit. Deserunt nisi architecto asperiores debitis at amet dolorum fuga obcaecati ex temporibus, consequatur eos velit natus, corporis quam.</p>
+            <p class="sans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur magnam incidunt reprehenderit. Deserunt nisi architecto asperiores debitis at amet dolorum fuga obcaecati ex temporibus, consequatur eos velit natus, corporis quam.</p>
+        </section>
+        <section>
+            <h2 id="css-basics">CSS Basics</h2>
+            <p>
+                <ul>
+                    <li><a href="https://www.are.na/block/6841438">History of CSS</a></li>
+                    <li><a href="https://www.are.na/block/6827853">Håkon Lie</a></li>
+                </ul>
+            </p>
+        </section>
+        <section>
+            <h2 id="html-basics">What is CSS?</h2>
+            <p>If HTML is a set of instructions telling the web browser what to display, CSS tells the web browser how to display it. CSS stands for Cascading Style Sheet and was invented in 1994 by Håkon Lie. It handles the presentation layer of our webpage and allows us to associate style rules with HTML elements.</p>
+            <p>It provides the browser with precise instructions on how to style each element we want displayed on the page and can affect the text format — like font, size, color — the size and position of various objects on the page, colors, spacial layouts, etc.</p>
+        </section>
+        <section>
+            <h2 id="html-basics">CSS Syntax</h2>
+            <p>A CSS rule-set consists of a selector and a declaration block. Each declaration must end in a semi-colon. The selector points to the HTML element you want to style. </p>
+            <figure>
+                <img src="https://cdn-images-1.medium.com/max/2736/0*hwYZn6VLH15gepkh" alt="">
+            </figure>
+            <p>The declaration block includes a CSS property name and a value, separated by a colon. </p>
+            <figure>
+                <img src="https://cdn-images-1.medium.com/max/2728/0*7GOK3mgSnAhpZDxX" alt="">
+            </figure>
+        </section>
+        <section>
+            <h2>Three Ways to Apply CSS to a Website</h2>
+            <h3 id="tutorial--instructions">1. Inline</h3>
+            <p>If you’re looking to add a unique style for a single HTML element, you can use an inline style by adding the style attribute to the relevant tag. The style attribute can contain any CSS property. In this example, we’re changing the paragraph text color to blue and its size to 2 ems.</p>
+            <figure>
+                <img src="https://cdn-images-1.medium.com/max/2484/1*Cg7abuXnnYY5NLnRS7qq3Q.png" alt="">
+            </figure>
+            <h3 id="tutorial--instructions">2. Embed a style tag in the head tag</h3>
+            <p>You can include CSS rules by placing them inside a <code>&lt;style&gt;</code>, element, which usually sits inside the &lt;head&gt; tag.</p>
+            <figure>
+                <img src="https://cdn-images-1.medium.com/max/3168/1*322svOMRqx-qmGGy6zEhig.png" alt="">
+            </figure>
+            <h3 id="tutorial--instructions">3. Link to an external file using the link tag</h3>
+            <p>The &lt;link&gt; tag should live inside the &lt;head&gt; of the document and tells the browser where to find the CSS file that should be used to style the web page.</p>
+            <figure>
+                <p><code>index.html</code></p>
+                <img src="https://cdn-images-1.medium.com/max/2620/1*fJhoilHeevKJlZ6MKs1zOg.png" alt="">
+            </figure>
+            <figure>
+                <p><code>style.css</code></p>
+                <img src="https://cdn-images-1.medium.com/max/3168/1*OGEUXj4C-119GzTY4Bwvjw.png" alt="">
+            </figure>
+            <p>The benefit of using an external stylesheet allows you to use the same style sheet for multiple pages, e.g. if you want your About, Home and Contact pages to all have the same styling. As a result, you only have to make changes to one file.</p>
+        </section>
+        <section>
+            <h2>Tutorial 2.1</h2>
+            <h3 id="tutorial--instructions">Instructions</h3>
+            <figure>
+                <label for="mn-blue-links" class="margin-toggle">⊕</label>
+                <input type="checkbox" id="mn-blue-links" class="margin-toggle">
+                <span class="marginnote">Marianne Ahlfeld- Heymann (attributed), exercise from the class “pictorial form theory” by Paul Klee, 1923–24, drawings.</span>
+                <img src="https://cdn-images-1.medium.com/max/15456/1*YoeM4JRdjJ3lZjgN8RSzCQ.jpeg" alt="">
+            </figure>
+            <p>Create a single webpage that displays two different overlapping patterns. Experiment using any of the HTML or CSS properties learned so far. For this example, we will:
+                <ul>
+                    <li>Use only HTML & CSS.</li>
+                    <li>Use only black and white.</li>
+                </ul>
+            </p>
+            <h3 id="tutorial--examples">Examples</h3>
+            <p>
+                <ul>
+                    <li><a href="https://www.google.com/search?q=bauhaus+textiles&tbm=isch&chips=q:bauhaus+textiles,g_1:anni+albers:ld6-0SLbXLk%3D&hl=en&ved=2ahUKEwiIlaaSgd_pAhWF0FMKHfrtAeoQ4lYoAXoECAEQFw&biw=1440&bih=686">Annie Albers</a>, textiles</li>
+                    <li><a href="">Josef Albers</a>, graphics</li>
+                    <li><a href="https://www.google.com/search?q=Marcel+Breuer&tbm=isch&chips=q:marcel+breuer,g_1:architecture:vLnA-30pBg0%3D&hl=en&ved=2ahUKEwjw5fHvg9_pAhUDK1MKHc7DBQ8Q4lYoAHoECAEQFQ&biw=1440&bih=686">Marcel Breuer</a>, architecture</li>
+                    <li><a href="https://www.google.com/search?q=kandinsky+bauhaus+paintings&tbm=isch&ved=2ahUKEwiG5qPegt_pAhVGFFMKHUmdDCAQ2-cCegQIABAA&oq=bauhaus+paintings+kan&gs_lcp=CgNpbWcQARgAMgYIABAIEB46BAgAEB46BggAEAUQHlCkG1iHLmCUOWgCcAB4AIABRogB9wKSAQE2mAEAoAEBqgELZ3dzLXdpei1pbWc&sclient=img&ei=VB7UXobsDsaozALJurKAAg&bih=686&biw=1440&hl=en&hl=en">Wassily Kandinsky</a>, painting</li>
+                </ul>
+            </p>
+            <p>Starter code for this tutorial can be found in <a href="https://github.com/celestelayne/design-practices/tree/master/Tutorials/tutorial-02">this Github repository</a>.</p>
+
+            <h3 id="tutorial--solution">Solution</h3>
+            <figure class="iframe-wrapper">
+                <iframe width="100%" height="250" frameborder="0" src="https://codepen.io/celestelayne/embed/abvxqMg" frameborder="0" allowfullscreen>
+                </iframe>
+            </figure>
+        </section>
+        <section>
+            <h2>Color</h2>
+            <p>Color brings your web pages to life. Every color on a computer screen is created by mixing amounts of red, green, and blue. There are three ways to specify colors in CSS:
+                <ol>
+                    <li><a href="https://www.w3.org/wiki/CSS/Properties/color/RGB">RGB Values</a></li>
+                    <li><a href="https://css-tricks.com/8-digit-hex-codes/">Hexadecimal Values</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value">Keyword Values</a></li>
+                </ol>
+            </p>
+
+            <h3 id="color--color-keywords">Color Keywords</h3>
+            <p>These can be found on MDN and are case-insensitive keywords that represent a specific color. The chart on MDN also includes the RGB hex value. For example:</p>
+
+            <h3 id="color--hexadecimal">Hexadecimal</h3>
+            <p>Hexadecimal is a scale from 0 -> F with digits 0–9 the jumping to characters starting from ‘A’ to ‘F’ which altogether contains 16 different values.</p>
+
+            <h3 id="color--hexadecimal">rgb() and rgba()</h3>
+        </section>
+        <section>
+            <h2>Web Typography</h2>
+            <p>Web typography can be split into two groups: properties that affect the font and its appearance and those that have the same effect regardless of the font.</p>
+        </section>
+        <section>
+            <h2>Selectors</h2>
+        </section>
+
+        <section>
+            <h2>Tutorial 2.2</h2>
+            <h3 id="tutorial--instructions">Instructions</h3>
+        </section>
+
+        <section>
+            <h2>Box Model</h2>
+            <p>All HTML elements can be considered boxes. Even if you see a circle, it lives within a box. This box will either be a block-level box or an inline box.</p>
+            <p>The CSS box model describes this principle — a box wraps around all HTML elements, and it consists of: margins, borders, padding, and the actual content. This model allows us to place a border around elements and space elements in relation to other elements.</p>
+            <h3 id="box-model--components">Box Model Components</h3>
+            <p>The image below illustrates the box model and what you should have seen in your dev tools:</p>
+        </section>
+
+        <section>
+            <h2>Exercise 2</h2>
+            <figure>
+                <img src="https://cdn-images-1.medium.com/max/1996/1*kEvCG0PehzlPm9uedLoS7w.jpeg" alt="">
+            </figure>
+            <h3 id="exercise--instructions">Instructions</h3>
+            <p>Using the five variations of your poem from HTML Basics. Each variation will be a separate web page. For these variations, focus on changing the poems form through shifts in spacing, scale, hierarchy and typography. The poem’s original content must remain intact.</p>
+            <p>Focus on positioning elements using CSS. Experiment with space and possibly try a very tall or a very wide page. Experiment with layering different elements. What is on top and what is behind? What is fixed?</p>
+
+            <p>Starter code for this tutorial can be found in <a href="https://github.com/celestelayne/design-practices/tree/master/Exercises/exercise-02">this Github repository</a>.</p>
+            </p>
+        </section>
+    </article>
+</body>
+</html>
