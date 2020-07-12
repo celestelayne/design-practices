@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Websites Are Places, Too: Layout Basics</title>
+    <link rel="stylesheet" href="../tufte.css"/>
+</head>
+<body>
+    <article>
+        <h1 id="tufte-css">Websites Are Places, Too: Layout Basics</h1>
+        <section>
+            <figure>
+                <label for="mn-blue-links" class="margin-toggle">⊕</label>
+                <input type="checkbox" id="mn-blue-links" class="margin-toggle">
+                <span class="marginnote">Cedric Price. <em>Fun Palace</em>, 1964.</span> 
+                <img src="https://cdn-images-1.medium.com/max/3720/1*HTIwsp6aPOoGiFCcCraG-g.jpeg" alt="">
+            </figure>
+            <p class="sans">Cedric Price was a visionary architect. He incorporated cybernetic feedback loops in projects that challenged traditional relationships between architects, users, sites, and technology. The Fun Palace (1963–1967, unbuilt) one of his most influential projects, designed with theater director Joan Littlewood and cybernetician Gordon Pask, challenged the very definition of architecture. The Fun Palace was not a conventional ‘building’, but a kind of scaffold or <em>framework</em>, enclosing a socially interactive machine — a virtual architecture merging art and technology.</p>
+            <p class="sans">In this lesson, we are going to think about the layout as a <em>framework</em> hosted within the web browser. This lesson provides one of the tools to experiment with what that framework can look like. Is it a building? Is it a room? Is it a park or a playground? This supporting framework can then be used to facilitate interaction between people (users) and the computer (web browser).</p>
+        </section>
+        <section>
+            <h2 id="css-basics">Layout History</h2>
+            <p>
+                <ul>
+                    <li><a href="https://www.printmag.com/design-education/online-design-courses/early-grids-in-layout-design/"> A Brief History in Layout Design: The Early Grid Systems</a>by Natalie Boyd. <em>Print</em>. December 4, 2016</li>
+                    <li><a href="https://en.wikipedia.org/wiki/Page_layout"> Page Layout</a>, Wikipedia</li>
+                </ul>
+            </p>
+        </section>
+        <section>
+            <h2 id="css-basics">Normal Flow</h2>
+            <p>Normal flow is where you begin with any layout. In the normal flow, text elements are laid out from top to bottom, and from left to right in left-to-right reading languages (or from right to left in right-to-left reading languages). This is the default behavior of the web browser.</p>
+            <p>In the normal flow, block-level elements stack on top of one another and inline elements fill the available space.</p>
+            <p>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout">CSS Flow Layout</a>, MDN Documentation</li>
+                    <li><a href="https://www.smashingmagazine.com/2018/05/guide-css-layout/">Getting Started with CSS Layout</a>by Rachel Andrew. Smashing Magazine. May 25, 2018</li>
+                </ul>
+            </p>
+        </section>
+        <section>
+            <h2 id="css-basics">Display</h2>
+            <p>In Concrete Poetry: HTML Basics, we discovered that every element on a web page is a rectangular box. Even if you see a circle, it lives within a box. This box can be a **block-level **or an **inline **box. The `display` property in CSS determines exactly how that rectangular box behaves.</p>
+            <p>A block-level element has some whitespace above and below it and does not tolerate any HTML elements next to it. This makes the element a block box. It won’t let anything sit next to it on the page and takes up the full width of the browser.</p>
+            <p>
+            <pre>
+                <code>
+                    div {
+                        display: block;
+                    }
+                </code>
+            </pre>
+            </p>
+            <figure>
+                <img src="https://cdn-images-1.medium.com/max/4398/1*aUZktdOCIiXrjrTgtkpeJw.png" alt="">
+            </figure>
+            <p>An inline element has no line break before or after it. This makes the element sit on the same line as another element, but without formatting it like a block. It only takes up as much width as it needs . Inline places all your elements on a single line. The bad news is that it doesn’t maintain its “box”ness.</p>
+            <p>
+                <pre>
+                    <code>
+                        div {
+                            display: inline;
+                        }
+                    </code>
+                </pre>
+            </p>
+            <figure>
+                <img src="https://cdn-images-1.medium.com/max/4398/1*pxOuFhgpgH7BugdGeWSkxg.png" alt="">
+            </figure>
+            <p>An inline-block element is placed as an inline element (on the same line as adjacent content), but it behaves as a block element. This makes the element a block box but will allow other elements to sit next to it on the same line.</p>
+            <p>
+                <pre>
+                    <code>
+                        div {
+                            display: inline-block;
+                        }
+                    </code>
+                </pre>
+            </p>
+            <p>If you assign none as the value of the display, this will make the element and its content disappear from the page entirely!</p>
+            <p>
+                <pre>
+                    <code>
+                        div {
+                            display: none;
+                        }
+                    </code>
+                </pre>
+            </p>
+            <h3 id="tutorial--instructions">Floats</h3>
+            <p>The concept of “floats” comes from print layouts, where text wraps around an image on either left or right. The image element is removed from the normal flow of the web page, placing the element to the left or right side of its container, while allowing other elements to wrap around it. Floats were never meant for digital layout and have been superseded by Flexbox and CSS grid.</p>
+        </section>
+        <section>
+            <h2 id="css-basics">Positioning</h2>
+            <p>In CSS positioning, blocks are defined as being either in the normal flow or removed from the normal flow. It’s a way to build complexity into your page layout. Floating and positioning elements allow you to change their relationship to the normal flow.</p>
+
+            <h3 id="tutorial--instructions">Static Positioning</h3>
+            <p>The default value of every element is static. A static object receives its layout rules from properties such as display and float, and is considered an ‘un-positioned’ element. Any element that has a value other than static is referred to as a ‘positioned’ element.</p>
+            <p>You rarely explicitly declare `position:static` like this because it is the default.</p>
+
+            <h3 id="tutorial--instructions">Relative Positioning</h3>
+            <p>Using `position: relative` allows you to position an element within the document flow in relation to where it would normally occur. For example, let’s place two divs on our page and view them in their natural document flow:</p>
+
+            <h3 id="tutorial--instructions">Absolute Positioning</h3>
+            <p>Specifying `position: absolute` _removes the element from the document_ and places it exactly where you tell it to be.</p>
+            <p>An element that has been styled with `position: absolute` will remove that element from the rest of the document flow, and position it in relation to the closest positioned element. If there are no other positioned elements on the page, the absolute element will use the <body> as a reference object.</p>
+            <p>Because `position: absolute` elements work in tandem with other positioned elements, you must set the reference element to `position: relative`. Let’s look at an example.</p>
+
+            <h3 id="tutorial--instructions">Fixed Positioning</h3>
+            <p>A fixed element is not only removed from the document flow, but also stays in its position as the user scrolls on the page. A common fixed element is the nav. Let’s see it in action. Here’s the nav in its natural flow of the document:</p>
+        </section>
+        <section>
+            <h2 id="css-basics">Tutorial 3.1</h2>
+            <p>Cedric Price’s Fun Palace was an environment continuously interacting and responding to people. For this tutorial, we are going to lay the groundwork for a PLACE where the public could have agency over their environment. The resulting PLACE could be responsive to visitors needs and the many activities intended to take place there.</p>
+            <figure>
+                <img src="https://cdn-images-1.medium.com/max/4000/1*TlvyrFoQ5CzVg_OYlNayUQ.jpeg" alt="">
+            </figure>
+            <h3 id="tutorial--instructions">Instructions</h3>
+            <p>Using CSS float, positioning and the box model (margin, padding, border), create a PLACE where you can perform a specific activity — either for you to do or observe someone else doing.</p>
+            <p>Play with other CSS properties such as z-index, background color, border, shadow, and gradient.</p>
+        </section>
+        <section>
+            <h2 id="css-basics">Flexbox</h2>
+        </section>
+        <section>
+            <h2 id="css-basics">CSS Grid</h2>
+        </section>
+        <section>
+            <h2 id="css-basics">Tutorial 3.2</h2>
+            <h3 id="tutorial--instructions">Instructions</h3>
+            <p>Create three more PLACES (using one of the architectures above) and **create a way to navigate between them **(dérive — a technique of rapid passage through varied ambiences). An alternative to this tutorial could be to create a single-page PLACE and use anchor tags to navigate between them.</p>
+        </section>
+        <section>
+            <h2 id="css-basics">Responsive Design</h2>
+            <p>“Responsive Design” is the strategy of making a site that “responds” to the browser and device that it is being shown on… by looking awesome no matter what.</p>
+        </section>
+        <section>
+            <h2>Exercise 3</h2>
+            <div class="epigraph">
+                <blockquote>
+                    <p>“We lost public spaces. Online public spaces. Facebook and Google are shopping malls, but we think they are parks!”</p>
+                    <footer>— Aral Balkan</footer>
+                </blockquote>
+            </div>
+            <p>Make sure that all the PLACES are responsive (including your navigation system) and that the visitor is still able to use the site to perform the intended activity.</p>
+        </section>
+    </article>
+</body>
+</html>

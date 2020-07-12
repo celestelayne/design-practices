@@ -16,8 +16,14 @@
                 <span class="marginnote">László Moholy-Nagy: <em>A 19</em>, 1927</span> 
                 <img src="https://cdn-images-1.medium.com/max/2000/1*g4L2Rc7vIoj7USTmeY-hrQ.jpeg" alt="">
             </figure>
-            <p class="sans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur magnam incidunt reprehenderit. Deserunt nisi architecto asperiores debitis at amet dolorum fuga obcaecati ex temporibus, consequatur eos velit natus, corporis quam.</p>
-            <p class="sans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur magnam incidunt reprehenderit. Deserunt nisi architecto asperiores debitis at amet dolorum fuga obcaecati ex temporibus, consequatur eos velit natus, corporis quam.</p>
+            <div class="epigraph">
+                <blockquote>
+                    <p>Art itself cannot be taught, but craftsmanship can. Architects, painters, sculptors are all craftsmen in the original sense of the word.</p>
+                    <footer>Walter Gropius</footer>
+                </blockquote>
+            </div>
+            <p class="sans">The Bauhaus was a German art school in the city of Weimar. It was started by Walter Gropius and was in operation from 1919 to 1933. Gropius’ vision for the school was laid out in the Proclamation of the Bauhaus (1919), which described a utopian craft guild combining architecture, sculpture, and painting into a single creative expression.</p>
+            <p class="sans">CSS is a language that allows you to change the appearance of HTML elements on the webpage: the size, style, and color of text; background colors; border styles and colors; even the position of elements on the page. In this lesson, we are going to use CSS to emphasize the concept of 'website as place', keeping in mind several design principles such as dominance, similarity, rhythm and contrast. </p>
         </section>
         <section>
             <h2 id="css-basics">CSS Basics</h2>
@@ -87,12 +93,12 @@
             <p>
                 <ul>
                     <li><a href="https://www.google.com/search?q=bauhaus+textiles&tbm=isch&chips=q:bauhaus+textiles,g_1:anni+albers:ld6-0SLbXLk%3D&hl=en&ved=2ahUKEwiIlaaSgd_pAhWF0FMKHfrtAeoQ4lYoAXoECAEQFw&biw=1440&bih=686">Annie Albers</a>, textiles</li>
-                    <li><a href="">Josef Albers</a>, graphics</li>
+                    <li><a href="">Josef Albers</a>, geometric painter</li>
                     <li><a href="https://www.google.com/search?q=Marcel+Breuer&tbm=isch&chips=q:marcel+breuer,g_1:architecture:vLnA-30pBg0%3D&hl=en&ved=2ahUKEwjw5fHvg9_pAhUDK1MKHc7DBQ8Q4lYoAHoECAEQFQ&biw=1440&bih=686">Marcel Breuer</a>, architecture</li>
                     <li><a href="https://www.google.com/search?q=kandinsky+bauhaus+paintings&tbm=isch&ved=2ahUKEwiG5qPegt_pAhVGFFMKHUmdDCAQ2-cCegQIABAA&oq=bauhaus+paintings+kan&gs_lcp=CgNpbWcQARgAMgYIABAIEB46BAgAEB46BggAEAUQHlCkG1iHLmCUOWgCcAB4AIABRogB9wKSAQE2mAEAoAEBqgELZ3dzLXdpei1pbWc&sclient=img&ei=VB7UXobsDsaozALJurKAAg&bih=686&biw=1440&hl=en&hl=en">Wassily Kandinsky</a>, painting</li>
                 </ul>
             </p>
-            <p>Starter code for this tutorial can be found in <a href="https://github.com/celestelayne/design-practices/tree/master/Tutorials/tutorial-02">this Github repository</a>.</p>
+            <p>Starter code for this tutorial can be found in <a href="https://github.com/celestelayne/design-practices/tree/master/Tutorials/tutorial-03">this Github repository</a>.</p>
 
             <h3 id="tutorial--solution">Solution</h3>
             <figure class="iframe-wrapper">
@@ -102,6 +108,9 @@
         </section>
         <section>
             <h2>Color</h2>
+            <figure>
+                <img src="https://res.cloudinary.com/dlgtpl81j/image/upload/v1594073450/skills-tree/albers-07_pvpmnv.jpg" alt="">
+            </figure>
             <p>Color brings your web pages to life. Every color on a computer screen is created by mixing amounts of red, green, and blue. There are three ways to specify colors in CSS:
                 <ol>
                     <li><a href="https://www.w3.org/wiki/CSS/Properties/color/RGB">RGB Values</a></li>
@@ -112,41 +121,179 @@
 
             <h3 id="color--color-keywords">Color Keywords</h3>
             <p>These can be found on MDN and are case-insensitive keywords that represent a specific color. The chart on MDN also includes the RGB hex value. For example:</p>
+            <p>Using color keywords is good if you don’t need color precision.</p>
 
             <h3 id="color--hexadecimal">Hexadecimal</h3>
             <p>Hexadecimal is a scale from 0 -> F with digits 0–9 the jumping to characters starting from ‘A’ to ‘F’ which altogether contains 16 different values.</p>
+            <p>If you see lots of numbers it will be very dark and if you see lots of letters it will be very light.</p>
 
             <h3 id="color--hexadecimal">rgb() and rgba()</h3>
+            <p>Colors can be defined according to their red, green, and blue components (the RGB model) by using hexadecimal and functional notations. The optional alpha component represents transparency. The RGB scale is from 0 to 255.</p>
+
+            <p>
+                <ul>
+                    <li><a href="https://www.smashingmagazine.com/2012/10/the-code-side-of-color/">Named Colors and Hex Equivalents</a>by Chris Coyier, Jan 29 2012, CSS Tricks</li>
+                    <li><a href="https://www.smashingmagazine.com/2012/10/the-code-side-of-color/"> Hex Color — The Code Side of Color</a>by Ben Gremillion, Smashing Magazine. October 4, 2012</li>
+                </ul>
+            </p>
+            <h3 id="web-typography--readings">List of font selection tools:</h3>
+            <p>
+                <ul>
+                    <li><a href="https://htmlcolorcodes.com/">HTML Color Codes</a>, Dixon & Moe</li>
+                    <li><a href="https://color.adobe.com/create">Adobe Color</a></li>
+                    <li><a href="">Color Claim</a>, Tobias von Schneider</li>
+                    <li><a href="https://cssgradient.io/">CSS Gradient</a>, Dixon & Moe</li>
+                    <li><a href="https://coolbackgrounds.io/">Cool Backgrounds</a>, Dixon & Moe</li>
+                </ul>
+            </p>
         </section>
         <section>
             <h2>Web Typography</h2>
-            <p>Web typography can be split into two groups: properties that affect the font and its appearance and those that have the same effect regardless of the font.</p>
+
+            <figure>
+                <img src="https://res.cloudinary.com/dlgtpl81j/image/upload/v1594073210/skills-tree/herbert-bayer-04_zrtwar.jpg" alt="">
+            </figure>
+            <p>Web typography can be split into two groups: properties that affect the font and its appearance and those that have the same effect regardless of the font.
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">font-weight</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-style">font-style</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size">font-size</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/line-height">line-height</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration">text-decoration</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color">color</a></li>
+                </ul>
+            </p>
+
+            <h3 id="web-typography--readings">Readings</h3>
+            <p>
+                <ul>
+                    <li><a href="https://practicaltypography.com/typography-in-ten-minutes.html"> Typography in 10 minutes</a>, Practical Typography</li>
+                    <li><a href="https://alistapart.com/article/sizematters/">CSS Design: Size Matters</a> by Todd Fahrner, May 11 2001, A List Apart</li>
+                    <li><a href="http://clagnut.com/blog/348/"> How to Size Text using ems</a>, 18 May 2004</li>
+                    <li><a href="https://gregrickaby.com/2013/05/using-the-golden-ratio-and-rems/"> Web Typography: Using The Golden Ratio and REM’s</a>by Greg Rickaby, May 19 2013</li>
+                    <li><a href="https://css-tricks.com/rems-ems/"> Font Size Idea: px at the Root, rem for Components, em for Text Elements</a>by Chris Coyier, Dec 17 2015, CSS Tricks</li>
+                    <li><a href="https://prowebtype.com/history/">History of Web Typography</a>by Donny Truong, 2019</li>
+                    <li><a href="https://prowebtype.com/">Professional Web Typography</a>, 2nd edition, by Donny Truong, 2019</li>
+                </ul>
+            </p>
+            <h3 id="web-typography--readings">List of font selection tools:</h3>
+            <p>
+                <ul>
+                    <li><a href="https://fonts.google.com/">Google Fonts</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Core_fonts_for_the_Web">Web Safe Fonts</a>, Wikipedia</li>
+                </ul>
+            </p>
         </section>
         <section>
             <h2>Selectors</h2>
+            <p>The Class Selector. **The class selector finds elements with a specific class, and as an attribute, allows us to target several elements that may share similarities.</p>
+
+            <p>The ID Selector. **The ID selector uses the id attribute of an HTML tag to find one specific element. We can give any name we want to our ID attribute, besides the obvious reserved words, such as tag names, etc.</p>
+                
+            <p>Specificity**. One of the most important concepts with CSS is specificity. Imagine you select an element by it’s class and give it some style; then, on the next line, you select the same element by it’s element name and it’s ID — how does the browser know what style to apply?</p>
+            
+            <p>
+                <ul>
+                    <li><a href="https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048">The 30 CSS Selectors You Must Memorize</a>, by Jeffrey Way, Tuts+, 9 Jun 2011</li>
+                </ul>
+            </p>
         </section>
 
         <section>
             <h2>Tutorial 2.2</h2>
+            <figure>
+                <label for="mn-blue-links" class="margin-toggle">⊕</label>
+                <input type="checkbox" id="mn-blue-links" class="margin-toggle">
+                <span class="marginnote">Karel Martens: <em>Untitled</em>, 2016, letterpress monoprint on found card, 7 by 5 inches.</span>
+                <img src="https://res.cloudinary.com/dlgtpl81j/image/upload/v1594057863/skills-tree/bauhaus-circle-square-04_drg3ae.jpg" alt="">
+            </figure>
+            <h3 id="tutorial--background">Background</h3>
+            <p>In 1923 Wassily Kandinsky circulated a questionnaire at the Bauhaus, asking respondents to fill in a triangle, square, and circle witht he primary colors of red, yellow, and blue. He hoped to discover a universal correspondence between form and color, embodied in the equation red=square, yellow=triangle, blue=circle. Years laster, some members of the Bauhaus dismissed Kandinsky’s fascination with these shape and color combinations as <em>utopian aestheticism</em>.</p>
+
             <h3 id="tutorial--instructions">Instructions</h3>
+            <p>Create a single webpage that displays two different overlapping patterns. Experiment with the visual output using the HTML and CSS properties we’ve covered so far. For this example, we will:
+                <ul>
+                    <li>Use only HTML & CSS.</li>
+                    <li>Use color and transparency.</li>
+                </ul>
+            </p>
+            <h3 id="tutorial--technique">Technique</h3>
+            <p>Create HTML tags with the same class attribute to repeat styles across multiple elements, which should generate your pattern. Try different combination of repeating elements or classes to see what happens.</p>
+
+            <h3 id="tutorial--technique">Keep In Mind</h3>
+            <p>
+                <ul>
+                    <li>Applying <a href="https://en.wikipedia.org/wiki/Gestalt_psychology#Theoretical_framework_and_methodology">Gestalt Theory</a>.</li>
+                    <li>Figure (the element in focus) and Ground (the background in which the element sits).</li>
+                    <li>Symmetry & Order.</li>
+                </ul>
+            </p>
+
+            <h3 id="tutorial--example">Example</h3>
+            <p>
+        <pre>
+            <code>
+    &lt;div class="square"&gt; &lt;div/&gt;
+    
+    .square {
+        width: 100px;
+        height: 100px;
+        background: #0000ff;    
+    }
+
+    .circle-fill {
+        width: 100px;
+        height: 100px;
+        background: #ff0000;
+        border-radius:50px;
+        float: left;
+        margin: 15px;
+    }
+
+    .triangle {
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 100px solid #ffff00;
+    }
+            </code>
+        </pre>
+            </p>
+
+            <p>Starter code for this tutorial can be found in <a href="https://github.com/celestelayne/design-practices/tree/master/Tutorials/tutorial-04">this Github repository</a>.</p>
+
+            <h3 id="tutorial--solution">Solution</h3>
+            <figure class="iframe-wrapper">
+                <iframe width="100%" height="250" frameborder="0" src="https://codepen.io/celestelayne/embed/abvxqMg" frameborder="0" allowfullscreen>
+                </iframe>
+            </figure>
         </section>
 
         <section>
             <h2>Box Model</h2>
             <p>All HTML elements can be considered boxes. Even if you see a circle, it lives within a box. This box will either be a block-level box or an inline box.</p>
             <p>The CSS box model describes this principle — a box wraps around all HTML elements, and it consists of: margins, borders, padding, and the actual content. This model allows us to place a border around elements and space elements in relation to other elements.</p>
+
             <h3 id="box-model--components">Box Model Components</h3>
             <p>The image below illustrates the box model and what you should have seen in your dev tools:</p>
+            <figure>
+                <img src="https://cdn-images-1.medium.com/max/2204/1*iMYYeTljtohJrK4cFBH_mA.png" alt="">
+                <p>Source: <a href="https://sabe.io/classes/css/css-box-model-padding-border-margin">The Box Model: Padding, Border, Margin</a> by Alan Morel. Updated on April 30, 2018.</p>
+            </figure>
         </section>
 
         <section>
             <h2>Exercise 2</h2>
             <figure>
+                <label for="mn-blue-links" class="margin-toggle">⊕</label>
+                <input type="checkbox" id="mn-blue-links" class="margin-toggle">
+                <span class="marginnote">Augusto de Campos’s <em>Lygia Fingers</em>, a poem from 1953 for his wife-to-be, Lygia Azeredo, highlights the international tendencies of concrete poetry; it appeared in a portfolio of concrete poems by European and Brazilian artists issued by the German printer and publisher Hansjörg Mayer in 1964. From 13 visuelle Texte (Stuttgart: Edition H. Mayer, 1964). The Getty Research Institute, 1357-116. Courtesy Augusto de Campos</span>
                 <img src="https://cdn-images-1.medium.com/max/1996/1*kEvCG0PehzlPm9uedLoS7w.jpeg" alt="">
             </figure>
             <h3 id="exercise--instructions">Instructions</h3>
             <p>Using the five variations of your poem from HTML Basics. Each variation will be a separate web page. For these variations, focus on changing the poems form through shifts in spacing, scale, hierarchy and typography. The poem’s original content must remain intact.</p>
-            <p>Focus on positioning elements using CSS. Experiment with space and possibly try a very tall or a very wide page. Experiment with layering different elements. What is on top and what is behind? What is fixed?</p>
+            <p>Focus on positioning elements using CSS. Experiment with layering different elements. What is on top and what is behind? What is fixed?</p>
 
             <p>Starter code for this tutorial can be found in <a href="https://github.com/celestelayne/design-practices/tree/master/Exercises/exercise-02">this Github repository</a>.</p>
             </p>
