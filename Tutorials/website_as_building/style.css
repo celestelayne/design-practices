@@ -1,34 +1,38 @@
 * {
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
 }
 
-html {
+html,
+body {
     height: 100%;
 }
 
 body {
-    color: #F2F2F2;
+    color: #f2f2f2;
+}
+
+.container {
     height: 100%;
 }
 
 .first {
     background: green;
-    height: 100vh;
+    height: 100%;
 }
 
 .second {
     background: pink;
-    height: 100vh;
+    height: 100%;
 }
 
 .third {
     background: lemonchiffon;
-    height: 100vh;
+    height: 100%;
 }
 
 .fourth {
     background: tomato;
-    height: 100vh;
+    height: 100%;
 }
