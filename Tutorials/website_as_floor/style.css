@@ -1,49 +1,47 @@
 * {
-    box-sizing: border-box;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
-}
-
-html {
-    height: 100%;
-}
-
-body {
-    color: #F2F2F2;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
     height: 100%;
     width: 100%;
-}
-
-.container {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap; /* this property is the key */
-}
-
-section {
-    display: inline-block;
-}
-
-.first {
+  }
+  
+  body {
+    color: #f2f2f2;
+  }
+  
+  .container {
+    display: flex;
+    overflow-x: auto;
+    height: 100%;
+  }
+  
+  .container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  section {
+    flex-grow: 1;
+    min-width: 100%;
+  }
+  
+  .first {
     background: tomato;
-    width:100vw;
-    height:100vh;
-}
-
-.second {
+  }
+  
+  .second {
     background: blue;
-    width:100vw;
-    height:100vh;
-}
-
-.third {
+  }
+  
+  .third {
     background: orange;
-    width:100vw;
-    height:100vh;
-}
-
-.fourth {
+  }
+  
+  .fourth {
     background: lemonchiffon;
-    width:100vw;
-    height:100vh;
-}
+  }
+  
